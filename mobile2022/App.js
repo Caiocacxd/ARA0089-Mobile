@@ -1,18 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image} from 'react-native';
-import rng from './assets/rng.jpg';
+import carnelogo from './assets/carnelogo.jpg';
 
 
 export default function App() {
   return (
    <>
    <View style={styles.container}>
-      <Text style={styles.firstText}>Primeira pagina </Text>
-      <Text style={styles.secondText}>Desenvolvimento</Text>
-      <Image
+   <Image
         style={styles.tinyLogo}
-        source={rng}
+        source={carnelogo} defaultSource={carnelogo}
       ></Image>
+      <Text style={styles.firstText}>MENU </Text>
+      <Text style={styles.secondText}>Restaurante e Churrascaria</Text>
       <Image
         style={styles.tinyLogo}
         source={{uri: 'https://resultadosdigitais.com.br/files/2015/08/thestocks-imagem.jpg'}}
@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   firstText: {
-    color: 'black',
-    backgroundColor: 'red',
+    color: 'yellow',
+    fontWeight: 'bold',
     fontSize: 50
   },
   secondText: {
