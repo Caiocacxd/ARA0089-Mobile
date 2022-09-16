@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image} from 'react-native';
 import carnelogo from './assets/carnelogo.jpg';
+import RedTitle from './src/componentes/AppName'; 
 
 
 export default function App() {
@@ -11,7 +12,7 @@ export default function App() {
         style={styles.tinyLogo}
         source={carnelogo} defaultSource={carnelogo}
       ></Image>
-      <Text style={styles.firstText}>MENU </Text>
+      <RedTitle>MENU</RedTitle>
       <Text style={styles.secondText}>Restaurante e Churrascaria</Text>
       <Image
         style={styles.tinyLogo}
@@ -26,14 +27,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
   },
   firstText: {
     color: 'yellow',
     fontWeight: 'bold',
-    fontSize: 50
+    fontSize: 40
   },
   secondText: {
     color: 'red',
